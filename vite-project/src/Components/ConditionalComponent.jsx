@@ -1,8 +1,8 @@
 export default function ConditionalComponent() {
   var result = true;
   if (result) {
-    return <h1>In if condition</h1>;
+    return <h1>In if condition only</h1>;
   } else {
-    return <h1> in else</h1>;
+    return <h1> in else only</h1>;
   }
 }
