@@ -2,9 +2,9 @@ import Fruit from "./Fruit";
 export default function Fruits() {
   //var Fruits = ["Apple", "Banana", "Mango", "Pineapple", "Orange"];
   var Fruits = [
-    { name: "Apple", type: "fruit" },
-    { name: "Banana", type: "fruit" },
-    { name: "Orange", type: "fruit" },
+    { name: "Apple", type: "fruit", soldOut: true },
+    { name: "Banana", type: "fruit", soldOut: false },
+    { name: "Orange", type: "fruit", soldOut: true },
   ];
 
   return (
@@ -14,7 +14,12 @@ export default function Fruits() {
           //   <li key={fruit.name}>
           //     {fruit.name} {fruit.type}
           //   </li>
-          <Fruit key={fruit.name} name={fruit.name} type={fruit.type} />
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            type={fruit.type}
+            soldOut={fruit.soldOut}
+          />
         ))}
       </ul>
     </div>
